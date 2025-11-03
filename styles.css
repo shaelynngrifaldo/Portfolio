@@ -119,6 +119,31 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
+.footer-button,
+.sub-btn,
+.nav-btn {
+    font-family: 'Arapey', serif;
+    background-color: #A18D6D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    padding: 0.8rem 1.8rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    width: auto;
+    min-width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.footer-button:hover,
+.sub-btn:hover,
+.nav-btn:hover {
+    background-color: #8C7353;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
 /* ------------------------- COURSEWORK BUTTONS ------------------------- */
 .coursework-buttons {
@@ -523,3 +548,10 @@ body.drone {
         width: 90%;
     }
 }
+@media (min-width: 1200px) {
+    .footer-button, .sub-btn {
+        font-size: 1.3rem;
+        padding: 0.7rem 1.5rem;
+    }
+}
+
