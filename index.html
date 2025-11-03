@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shaelynn Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+
+  </head>
+  
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <h1 class="site-title">SHAELYNN GRIFALDO</h1>
+    <nav class="main-nav">
+      <button class="nav-btn" onclick="window.location.href='index.html'">About</button>
+      <button class="nav-btn" onclick="window.location.href='resume.html'">Resume</button>
+      <button class="nav-btn" onclick="window.location.href='coursework.html'">Coursework</button>
+      <button class="nav-btn" onclick="window.location.href='projects.html'">Projects</button>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <main>
+    <section id="about" class="container about">
+      <div class="hero">
+        <h2>About</h2>
+        <p class="hero-sub">Geospatial analysis • Remote Pilot Certified • Conservation-focused</p>
+        <p>
+            <p>
+                I am a recent graduate from <strong>The University of North Carolina at Chapel Hill</strong>, where I received a <strong>B.A. in Environmental Studies</strong> and had concentrations in <strong>Geographic Information Sciences</strong> and <strong>Geography</strong>. During my time at UNC, I developed strong skills in <strong>geospatial analysis</strong> using tools such as <strong>ArcGIS Pro</strong>, <strong>ArcGIS Online</strong>, <strong>StoryMaps</strong>, <strong>Field Maps</strong>, <strong>QGIS</strong>, <strong>R Studio</strong>, <strong>Google Earth Engine</strong>, and <strong>Pix4D</strong>. I also have a passion for <strong>conservation</strong> and <strong>environmental health</strong> and have utilized programming software like <strong>STATA</strong> and <strong>MaxEnt Modeling</strong> to conduct analyses. This website showcases the skills and experiences I’ve gained through my coursework and projects, feel free to explore!
+              </p>
+              
+        </p>
+      </div>
+      <div class="about-photo">
+        <img src="grad.jpeg" alt="Graduate" class="grad">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:shaelynngrifaldo@gmail.com">shaelynngrifaldo@gmail.com</a></p>
+      </section>
+      <p>© <span id="year"></span> Shaelynn Grifaldo • Built with HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

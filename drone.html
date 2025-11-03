@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drone Mapping Project | Shaelynn Grifaldo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  </head>
+  
+<body class="drone">
+
+ <!-- Header -->
+ <header class="site-header">
+  <h1 class="site-title">SHAELYNN GRIFALDO</h1>
+  <nav class="main-nav">
+    <button class="nav-btn" onclick="window.location.href='index.html'">About</button>
+    <button class="nav-btn" onclick="window.location.href='resume.html'">Resume</button>
+    <button class="nav-btn" onclick="window.location.href='coursework.html'">Coursework</button>
+    <button class="nav-btn" onclick="window.location.href='projects.html'">Projects</button>
+  </nav>
+</header>
+
+<!-- SOFTWARE & METHODS -->
+<section class="methods">
+  <h2>Software & Methods</h2>
+  <p>This project used Pix4D, ArcGIS Pro, and R Studio. Methods included drone flight missions for image capture, processing images into orthomosaics, GPS and ground control point alignment, and accuracy validation against traditional survey methods.</p>
+</section>
+
+<!-- IMAGE FLOW HORIZONTAL -->
+<section class="image-flow">
+  <div class="image-card">
+    <h3>Overlapping Images</h3>
+    <img src="overlap.png" alt="Overlay Map">
+  </div>
+
+  <div class="arrow">➜</div>
+
+  <div class="image-card">
+    <h3>Key Points</h3>
+    <img src="key.png" alt="Key Points Map">
+  </div>
+
+  <div class="arrow">➜</div>
+
+  <div class="image-card">
+    <h3>Orthomosaic</h3>
+    <img src="ortho.png" alt="Orthomosaic Output">
+  </div>
+</section>
+
+<!-- DESCRIPTION -->
+<section class="description">
+  <p>
+    This project demonstrates the drone mapping process using Pix4D software. Images were captured via sUAS flight missions, processed to identify ground control points, and transformed into a georeferenced orthomosaic. The workflow includes initial image overlay alignment, keypoint matching for accuracy, and final orthorectification.
+  </p>
+</section>
+
+<!-- FINDINGS & LESSONS -->
+<section class="findings">
+  <h2>Project Findings & Lessons Learned</h2>
+  <p>
+    Our project focused on comparing drone-derived GPS measurements with traditional ground surveys. We specifically evaluated accuracy for length, width, and positional data and identified challenges to improve future UAV-based geospatial surveys.
+  </p>
+  <p>
+    The key findings showed no statistically significant differences in length, width, or positional accuracy between drone and ground measurements. Elevation data was less reliable due to lack of GCPs and environmental challenges. The drone saved considerable time, making it useful for larger or hard-to-reach areas.
+  </p>
+</section>
+
+<!-- Back Button -->
+<button class="footer-button" onclick="window.location.href='coursework.html'">
+  Back to Coursework
+</button>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>© 2025 Shaelynn Grifaldo </p>
+</footer>
+
+</body>
+</html>

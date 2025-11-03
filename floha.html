@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Friends of the Lower Haw River | Shaelynn Grifaldo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  </head>
+  
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <h1 class="site-title">SHAELYNN GRIFALDO</h1>
+    <nav class="main-nav">
+      <button class="nav-btn" onclick="window.location.href='index.html'">About</button>
+      <button class="nav-btn" onclick="window.location.href='resume.html'">Resume</button>
+      <button class="nav-btn" onclick="window.location.href='coursework.html'">Coursework</button>
+      <button class="nav-btn" onclick="window.location.href='projects.html'">Projects</button>
+    </nav>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="intro-section">
+    <h2>Friends of the Lower Haw River Internship</h2>
+    <p>
+      During my internship with Friends of the Lower Haw River, I developed multiple outreach and educational products aimed at enhancing community engagement and environmental awareness. These projects focused on native plant and wildlife identification, combining field photography and creative design.
+    </p>
+  </section>
+
+  <!-- Project 1 -->
+  <section class="project-section">
+    <div class="pdf-container">
+      <h3 class="project-title">Wildflower Identification Guide</h3>
+      <embed src="wildflower.pdf" type="application/pdf" class="pdf-viewer">
+
+    </div>
+    <div class="description">
+      <p>
+        This field guide highlights native wildflowers along the Lower Haw River, combining species photography, identification tips, and habitat notes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Project 2 -->
+  <section class="project-section">
+    <div class="pdf-container">
+      <h3 class="project-title">Flowering Shrubs and Trees Identification Guide</h3>
+      <embed src="shrubs.pdf" type="application/pdf" class="pdf-viewer">
+
+    </div>
+    <div class="description">
+      <p>
+        This guide introduces key shrub and tree species native to the Haw River ecosystem, emphasizing ecological functions and seasonal traits.
+      </p>
+    </div>
+  </section>
+
+  <!-- Project 3 -->
+  <section class="project-section">
+    <div class="pdf-container">
+      <h3 class="project-title">Snake Identification Guide</h3>
+      <embed src="snakes.pdf" type="application/pdf" class="pdf-viewer">
+
+    </div>
+    <div class="description">
+      <p>
+        This educational pamphlet focuses on identifying local snake species and distinguishing between venomous and non-venomous varieties to promote coexistence and safety.
+      </p>
+    </div>
+  </section>
+<!-- Back Button -->
+<button class="footer-button" onclick="window.location.href='projects.html'">
+  Back to Projects
+</button>
+ <!-- FOOTER -->
+<footer class="site-footer">
+  <p>© 2025 Shaelynn Grifaldo </p>
+</footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

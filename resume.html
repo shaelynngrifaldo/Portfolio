@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume | Shaelynn Grifaldo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  </head>
+  
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <h1 class="site-title">SHAELYNN GRIFALDO</h1>
+    <nav class="main-nav">
+      <button class="nav-btn" onclick="window.location.href='index.html'">About</button>
+      <button class="nav-btn" onclick="window.location.href='resume.html'">Resume</button>
+      <button class="nav-btn" onclick="window.location.href='coursework.html'">Coursework</button>
+      <button class="nav-btn" onclick="window.location.href='projects.html'">Projects</button>
+    </nav>
+  </header>
+
+  <!-- Resume Section -->
+  <main>
+    <section id="resume" class="container resume">
+      <h2>Resume</h2>
+      <p class="resume-sub">View my resume below.</p>
+      <div class="resume-box">
+        <embed src="resume.pdf" type="application/pdf" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:shaelynngrifaldo@gmail.com">shaelynngrifaldo@gmail.com</a></p>
+      </section>
+      <p>© <span id="year"></span> Shaelynn Grifaldo • Built with HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
